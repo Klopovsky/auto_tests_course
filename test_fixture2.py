@@ -5,12 +5,6 @@ from selenium.webdriver.common.by import By
 link = "http://selenium1py.pythonanywhere.com/"
 
 
-@pytest.fixture
-def browser():
-    print("\nstart browser for test..")
-    browser = webdriver.Chrome()
-    return browser
-
 
 class TestMainPage1():
     # вызываем фикстуру в тесте, передав ее как параметр
